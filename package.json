@@ -1,0 +1,28 @@
+{
+  "name": "bitcoin-key-generator",
+  "version": "1.0.0",
+  "description": "a bitcoin key generator which safe and no dependencies and native javascript library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zy445566/bitcoin-key-generator.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "native",
+    "key",
+    "safe"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "author": "zy445566",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zy445566/bitcoin-key-generator/issues"
+  },
+  "homepage": "https://github.com/zy445566/bitcoin-key-generator#readme"
+}
