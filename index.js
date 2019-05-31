@@ -19,7 +19,7 @@ function getPrivteOriginKeyByRand() {
         privteKeyList.push(rand16Num.toString(16));
         if(rand16Num>0) {isZero = false;}
     }
-    if(isZero){getPrivteOriginKeyByRand();}
+    if(isZero){return getPrivteOriginKeyByRand();}
     return privteKeyList.join('');
 }
 
