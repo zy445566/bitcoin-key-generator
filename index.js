@@ -50,6 +50,10 @@ function getPublicOriginKey(privteKeyOrigin) {
     if(privteKeyOrigin.length!==64){
         throw new Error('privte Key Origin length must be 64!')
     }
+    // 不想增加依赖，如果想用更强大的secp256k1功能可以是用ecdsa-secp256k1，这个也是用原生js实现的算法
+    // const ecdsa = require('ecdsa-secp256k1');
+    // const publicKeyPoint = ecdsa.getPublicKeyPoint(BigInt(`0x${privteKeyOrigin}`));
+    // return ecdsa.publicKeyPoint2HexStr(publicKeyPoint).substring(2);
     const ecdh = crypto.createECDH('secp256k1');
     ecdh.setPrivateKey(privteKeyOrigin,'hex');
     return ecdh.getPublicKey('hex');
