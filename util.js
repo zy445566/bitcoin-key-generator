@@ -19,7 +19,7 @@ exports.hex2Base58 = function hex2Base58(hexNum)
         base58NumArray.unshift(base58Keys[(bigHexNumber % base58Len).toString()]);
         bigHexNumber = bigHexNumber / base58Len;
     }
-    base58NumArray.unshift(base58Keys[bigHexNumber]);
+    base58NumArray.unshift(base58Keys[bigHexNumber.toString()]);
     return base58NumArray.join("");
 }
 
