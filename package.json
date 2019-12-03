@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-key-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a bitcoin key generator which safe and no dependencies and native javascript library.",
   "main": "index.js",
   "scripts": {

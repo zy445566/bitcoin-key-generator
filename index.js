@@ -70,12 +70,13 @@ function getPublicKeyByOrigin(publicKeyOrigin) {
     let key = `${ripemd160HexUsed}${sha3.slice(0,8)}`;
     return `${addreeSign}${util.hex2Base58(key)}`;
 }
-
-module.exports = {
+const defaultData = {
     getPrivteOriginKeyByStr,
     getPrivteOriginKeyByRand,
     getPrivteOriginKeyByKey,
     getPrivteKeyByOrigin,
     getPublicOriginKey,
     getPublicKeyByOrigin
-}
+};
+module.exports = defaultData;
+module.exports.default = defaultData;
